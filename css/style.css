@@ -1,0 +1,235 @@
+/* prettier-ignore */
+@import url("./font.css");
+@import url("./reset.css");
+
+body {
+  background: #282828;
+}
+
+#container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.banner {
+  background-color: #f58220;
+  padding: 11px 55px;
+}
+.banner p {
+  font-size: 13.65px;
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+.mainVisual {
+  position: relative;
+  width: 100%;
+  height: 431px;
+  background: url(../img/background.png) repeat center 100%;
+  background-size: 320px 431px;
+  z-index: -1;
+}
+.mainVisual .cardWrap {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.mainVisual .cardWrap .cardLeft {
+  width: 255.5px;
+  position: absolute;
+  left: -160px;
+  top: -100px;
+}
+.mainVisual .cardWrap .cardRight {
+  width: 87.5%;
+  /* width: 280px; */
+  position: absolute;
+  right: -60px;
+  top: 40px;
+}
+.mainVisual .titleWrap {
+  width: 100%;
+  position: absolute;
+  bottom: 82px;
+  padding: 0 18px;
+  box-sizing: border-box;
+}
+.mainVisual .titleWrap p {
+  color: #a5a5a5;
+  font-size: 12.8px;
+  letter-spacing: -0.025em;
+  line-height: 17.92px;
+  margin-bottom: 13px;
+}
+.mainVisual .titleWrap h2 {
+  font-size: 37.54px;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  color: #ffffff;
+}
+.mainVisual .logoWrap {
+  width: 100%;
+  position: absolute;
+  bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+  box-sizing: border-box;
+}
+.mainVisual .logoWrap .mireAsset {
+  width: 73px;
+  height: auto;
+  opacity: 0.4;
+}
+.mainVisual .logoWrap .hyundaiCard {
+  width: 78px;
+  height: auto;
+}
+/**프로모션*/
+.promotion {
+  position: relative;
+  background: #131726;
+}
+.promotion .titleWrap {
+  padding: 36px 17px 48px 18px;
+}
+.promotion .promotionTopImage {
+  position: absolute;
+  width: 320px;
+  top: 33px;
+  right: 0;
+}
+.promotion .contentsWrap {
+  padding: 18px 17px 37px 17px;
+  background: #f4f4f4;
+  border-radius: 17.7px 17.7px 0 0;
+}
+
+/**프로모션-혜택*/
+.promotion .benefit {
+  background: #ffffff;
+  padding: 14px 15px 17px 15px;
+  border-radius: 4.27px;
+  box-shadow: 0px 4px 8.46px 0.54px rgba(0, 0, 0, 0.05);
+}
+/**공통*/
+.promotion .contentsWrap .category {
+  font-size: 11.1px;
+  line-height: 1.34;
+  letter-spacing: 0.025em;
+  margin-bottom: 8px;
+  color: #f58220;
+}
+.promotion .contentsWrap .title {
+  font-size: 17px;
+  line-height: 1.19;
+  color: #111111;
+}
+.promotion .benefit .gradeWrap {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.promotion .benefit .gradeWrap > div {
+  flex: 1;
+  text-align: center;
+}
+.promotion .benefit .gradeWrap div + div {
+  border-left: 1px solid #d9d9d9;
+}
+.promotion .gradeWrap .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promotion .gradeWrap .icon img {
+  width: 20px;
+}
+.promotion .gradeWrap .icon em {
+  font-size: 11.9px;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: #666666;
+  margin-left: 4px;
+  font-style: normal;
+}
+.promotion .gradeWrap strong {
+  display: block;
+  font-size: 12.8px;
+  line-height: 1.16;
+  margin-top: 5px;
+}
+
+/**타이틀공통*/
+.title .category {
+  display: block;
+  font-size: 12px;
+  letter-spacing: -0.025em;
+  color: #f58220;
+  margin-bottom: 14px;
+}
+.title h3 > span {
+  display: block;
+  font-size: 29px;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+@media (min-width: 750px) {
+  #container {
+    max-width: 320px;
+  }
+}
+@media (min-width: 1199px) {
+  #container {
+    max-width: 750px;
+  }
+  .banner {
+    background-color: #df632c;
+    padding: 22px 110px;
+  }
+  .banner p {
+    font-size: 32px;
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    text-align: center;
+  }
+  .mainVisual {
+    height: 1010px;
+  }
+  .mainVisual .cardWrap .cardLeft {
+    width: 511px;
+    left: -311px;
+    top: -162px;
+  }
+  .mainVisual .cardWrap .cardRight {
+    width: 650px;
+    right: -140px;
+    top: 95px;
+  }
+  .mainVisual .titleWrap {
+    bottom: 189px;
+    padding: 0 40px;
+  }
+  .mainVisual .titleWrap p {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 33px;
+  }
+  .mainVisual .titleWrap h2 {
+    font-size: 88px;
+  }
+  .mainVisual .logoWrap {
+    align-items: flex-end;
+    bottom: 39px;
+    padding: 0 40px;
+  }
+  .mainVisual .logoWrap .mireAsset {
+    width: 173px;
+  }
+  .mainVisual .logoWrap .hyundaiCard {
+    width: 182px;
+  }
+}
