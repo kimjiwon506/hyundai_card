@@ -14,8 +14,8 @@ body {
 }
 
 .banner {
-  background-color: #f58220;
-  padding: 11px 55px;
+  background-color: #df632c;
+  padding: 12px 56px;
 }
 
 .banner p {
@@ -30,7 +30,7 @@ body {
   width: 100%;
   height: 431px;
   background: url(../img/background.png) repeat center 100%;
-  background-size: 320px 431px;
+  background-size: 320px 430px;
   z-index: -1;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .mainVisual .cardWrap .cardLeft {
-  width: 255.5px;
+  width: 256px;
   position: absolute;
   left: -160px;
   top: -100px;
@@ -65,15 +65,13 @@ body {
 
 .mainVisual .titleWrap p {
   color: #a5a5a5;
-  font-size: 12.8px;
-  letter-spacing: -0.025em;
+  font-size: 13px;
   line-height: 17.92px;
   margin-bottom: 13px;
 }
 
 .mainVisual .titleWrap h2 {
   font-size: 37.54px;
-  letter-spacing: -0.025em;
   line-height: 1.25;
   color: #ffffff;
 }
@@ -81,7 +79,7 @@ body {
 .mainVisual .logoWrap {
   width: 100%;
   position: absolute;
-  bottom: 17px;
+  bottom: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,7 +88,7 @@ body {
 }
 
 .mainVisual .logoWrap .mireAsset {
-  width: 73px;
+  width: 74px;
   height: auto;
   opacity: 0.4;
 }
@@ -106,13 +104,13 @@ body {
 }
 
 .promotion .titleWrap {
-  padding: 36px 17px 48px 18px;
+  padding: 36px 18px 48px 18px;
 }
 
 .promotion .promotionTopImage {
   position: absolute;
   width: 320px;
-  top: 33px;
+  top: 34px;
   right: 0;
 }
 
@@ -122,6 +120,14 @@ body {
   border-radius: 17.7px 17.7px 0 0;
 }
 
+.promotion .contentsWrap .benefit,
+.promotion .contentsWrap .targetCard,
+.promotion .contentsWrap .period,
+.promotion .contentsWrap .join {
+  border-radius: 4.27px;
+  box-shadow: 0px 4px 8.46px 0.54px rgba(0, 0, 0, 0.05);
+}
+
 .promotion .contentsWrap > div + div {
   margin-top: 9px;
 }
@@ -129,15 +135,11 @@ body {
 /**프로모션-혜택*/
 .promotion .benefit {
   background: #ffffff;
-  padding: 14px 15px 17px 15px;
-  border-radius: 4.27px;
-  box-shadow: 0px 4px 8.46px 0.54px rgba(0, 0, 0, 0.05);
+  padding: 14px 16px 18px 15px;
 }
 
 .promotion .contentsWrap .category {
-  font-size: 11.1px;
   line-height: 1.34;
-  letter-spacing: 0.025em;
   margin-bottom: 8px;
   color: #f58220;
 }
@@ -164,7 +166,18 @@ body {
 }
 
 .promotion .benefit .gradeWrap div + div {
-  border-left: 1px solid #d9d9d9;
+  position: relative;
+}
+
+.promotion .benefit .gradeWrap div + div::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 7px;
+  left: 0;
 }
 
 .promotion .benefit .gradeWrap .silver {
@@ -190,9 +203,7 @@ body {
 }
 
 .promotion .gradeWrap .icon em {
-  font-size: 12px;
   line-height: 1.25;
-  letter-spacing: -0.025em;
   color: #666666;
   margin-left: 4px;
   font-style: normal;
@@ -202,7 +213,7 @@ body {
   display: block;
   font-size: 12.8px;
   line-height: 1.16;
-  margin-top: 5px;
+  margin-top: 6px;
   letter-spacing: -0.05em;
 }
 
@@ -215,8 +226,6 @@ body {
 /**타이틀공통*/
 .title .category {
   display: block;
-  font-size: 12px;
-  letter-spacing: -0.025em;
   color: #f58220;
   margin-bottom: 14px;
 }
@@ -224,9 +233,15 @@ body {
 .title h3 > span {
   display: block;
   font-size: 29px;
-  letter-spacing: -0.025em;
   line-height: 1.2;
   color: #ffffff;
+}
+
+.title h3 {
+  display: block;
+  font-size: 29px;
+  line-height: 1.2;
+  color: #111111;
 }
 
 .promotion .targetCard {
@@ -243,12 +258,12 @@ body {
 }
 
 .promotion .join ol li {
-  font-size: 12px;
+  color: #333333;
   line-height: 1.5;
 }
 
-.promotion .joinButtonWrap {
-  margin: 17px auto 12px auto;
+.promotion .contentsWrap .joinButtonWrap {
+  margin: 18px auto 12px auto;
   text-align: center;
 }
 
@@ -256,7 +271,7 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 17px;
-  padding: 13px 30px;
+  padding: 14px 30px;
   border-radius: 21.3px;
   background: #f58220;
   color: #ffffff;
@@ -265,8 +280,7 @@ body {
 .promotion .notice {
   display: block;
   color: #999999;
-  font-size: 10.3px;
-  letter-spacing: -0.025em;
+  font-size: 10.5px;
   text-align: center;
 }
 
@@ -285,18 +299,19 @@ body {
 
 .stockSaveUp .title p {
   font-size: 14.5px;
-  line-height: 1.7;
+  line-height: 1.5;
   margin-top: 12px;
+  letter-spacing: -0.005em;
 }
 
 .stockSaveUp .backText {
   width: max-content;
   color: #eeeeee;
   display: block;
-  margin: 20px 0 13px 0;
+  margin-top: 14px;
   opacity: 0.9;
   font-size: 60px;
-  letter-spacing: -0.025em;
+  line-height: 1;
   white-space: nowrap;
   user-select: none;
   animation: textScroll 30s linear infinite;
@@ -307,9 +322,9 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   left: 50%;
-  top: calc(50% + 18px);
+  top: 134px;
 }
 
 .stockSaveUp .logoWrap img {
@@ -320,13 +335,41 @@ body {
   margin-left: 12px;
 }
 
+.stockSaveUp .text {
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
 @keyframes textScroll {
   0% {
-    transform: translateX(calc(0% - 0vw));
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(calc(-100% - 100vw));
+    transform: translate3d(-50%, 0, 0);
   }
+}
+
+.stockSaveUp .stockMoreButton {
+  color: #006cff;
+  position: relative;
+  text-decoration: none;
+  padding-right: 12px;
+}
+
+.stockSaveUp .stockMoreButton::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url(../img/more_arrow.png) no-repeat center/cover;
+  width: 6px;
+  height: 8.5px;
+  top: 2px;
+  right: 0px;
+}
+
+.goldDiamondBenefit {
+  padding: 34px 18px;
+  background-color: #f4f4f4;
 }
 
 @media (min-width: 750px) {
@@ -340,7 +383,6 @@ body {
   }
 
   .banner {
-    background-color: #df632c;
     padding: 22px 110px;
   }
 
@@ -405,20 +447,10 @@ body {
     top: 76px;
   }
 
-  /**폰트 사이즈 안맞아서 임시로 넣어둠*/
-  .promotion .title .category {
-    height: 30px;
-  }
-
-  .promotion .title h3 {
-    height: 154px;
-  }
-
   /**타이틀공통*/
   .title .category {
     font-size: 28px;
     line-height: 1.5;
-    letter-spacing: -0.025em;
     color: #f58220;
     margin-bottom: 30px;
   }
@@ -429,8 +461,15 @@ body {
     color: #ffffff;
   }
 
+  .title h3 {
+    display: block;
+    font-size: 68px;
+    line-height: 1.2;
+    color: #111111;
+  }
+
   .promotion .contentsWrap > div + div {
-    margin-top: 23px;
+    margin-top: 24px;
   }
 
   .promotion .contentsWrap {
@@ -440,6 +479,12 @@ body {
   .promotion .benefit {
     padding: 31px 32px;
     border-radius: 10px;
+  }
+
+  .promotion .benefit .gradeWrap div + div::after {
+    width: 2px;
+    top: 15px;
+    height: 70px;
   }
 
   .promotion .contentsWrap .category {
@@ -459,7 +504,7 @@ body {
   }
 
   .promotion .targetCard {
-    padding: 40px 30px 41px 32px;
+    padding: 40px 30px 40px 32px;
     border-radius: 10px;
     background-size: cover;
   }
@@ -467,19 +512,24 @@ body {
   .promotion .gradeWrap .icon img {
     width: 46px;
   }
+
   .promotion .gradeWrap .icon em {
     margin-right: 13px;
     font-size: 28px;
   }
+
   .promotion .benefit .gradeWrap .silver {
     padding-right: 30px;
   }
+
   .promotion .benefit .gradeWrap .gold {
     padding: 0 30px;
   }
+
   .promotion .benefit .gradeWrap .diamond {
     padding-left: 30px;
   }
+
   .promotion .gradeWrap strong {
     margin-top: 14px;
     font-size: 30px;
@@ -496,5 +546,69 @@ body {
 
   .promotion .join ol li {
     font-size: 28px;
+  }
+
+  .promotion .contentsWrap .joinButtonWrap {
+    margin: 40px 0 30px 0;
+  }
+
+  .promotion .contentsWrap .joinButton {
+    padding: 30px 90px;
+    font-size: 40px;
+    border-radius: 50px;
+  }
+
+  .promotion .notice {
+    font-size: 24px;
+  }
+
+  .stockSaveUp {
+    padding: 100px 0 98px 0;
+  }
+
+  .stockSaveUp .title h3 {
+    font-size: 68px;
+  }
+
+  .stockSaveUp .title p {
+    margin-top: 30px;
+    font-size: 34px;
+  }
+
+  .stockSaveUp .backText {
+    font-size: 140px;
+    margin-top: 34px;
+  }
+
+  .stockSaveUp .logoWrap img {
+    width: 75px;
+  }
+
+  .stockSaveUp .logoWrap img + img {
+    margin-left: 30px;
+  }
+
+  .stockSaveUp .logoWrap {
+    top: 313px;
+  }
+
+  .stockSaveUp .text {
+    font-size: 28px;
+    margin-bottom: 38px;
+  }
+
+  .stockSaveUp .stockMoreButton {
+    font-size: 28px;
+    padding-right: 24px;
+  }
+
+  .stockSaveUp .stockMoreButton::after {
+    top: 6px;
+    width: 11px;
+    height: 20px;
+  }
+
+  .goldDiamondBenefit h3 {
+    margin-bottom: 12px;
   }
 }
