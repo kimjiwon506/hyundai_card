@@ -1,18 +1,18 @@
 /* prettier-ignore */
 
 @font-face {
-  font-family: "YouandiModernHB";
+  font-family: "YouandiModernHead";
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   src: url(../font/YouandiModernHeadBold.eot);
   src: url(../font/YouandiModernHeadBold.eot?#iefix) format("embedded-opentype"),
     url(../font/YouandiModernHeadBold.woff) format("woff");
 }
 
 @font-face {
-  font-family: "YouandiModernHEB";
+  font-family: "YouandiModernHead";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
   src: url(../font/YouandiModernHeadExtraBold.eot);
   src: url(../font/YouandiModernHeadExtraBold.eot?#iefix)
       format("embedded-opentype"),
@@ -20,9 +20,9 @@
 }
 
 @font-face {
-  font-family: "YouandiModernHR";
+  font-family: "YouandiModernHead";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   src: url(../font/YouandiModernHeadRegular.eot);
   src: url(../font/YouandiModernHeadRegular.eot?#iefix)
       format("embedded-opentype"),
@@ -30,18 +30,18 @@
 }
 
 @font-face {
-  font-family: "YouandiModernTB";
+  font-family: "YouandiModernText";
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   src: url(../font/YouandiModernTextBold.eot);
   src: url(../font/YouandiModernTextBold.eot?#iefix) format("embedded-opentype"),
     url(../font/YouandiModernTextBold.woff) format("woff");
 }
 
 @font-face {
-  font-family: "YouandiModernTR";
+  font-family: "YouandiModernText";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   src: url(../font/YouandiModernTextRegular.eot);
   src: url(../font/YouandiModernTextRegular.eot?#iefix)
       format("embedded-opentype"),

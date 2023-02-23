@@ -2,613 +2,205 @@
 @import url("./font.css");
 @import url("./reset.css");
 
-body {
-  background: #282828;
-}
+#container { width: 100%; margin: 0 auto; min-width: 320px; } 
 
-#container {
-  width: 100%;
-  /* max-width: 750px; */
-  margin: 0 auto;
-  min-width: 320px;
-}
+.banner { background-color: #df632c; padding: 8px 52px; font-size: 14px; line-height: 20px; color: #fff; letter-spacing: -0.05em; text-align: center; } 
+.banner .italic { font-style: italic; font-size: 14px; line-height: 20px; } 
 
-.banner {
-  background-color: #df632c;
-  padding: 12px 56px;
-}
+.mainVisual { position: relative; width: 100%; height: 431px; background: url(../img/main_visual_background.png) repeat center 100%; background-size: 320px 430px; z-index: -1; } 
+.mainVisual .cardWrap { overflow: hidden; position: relative; height: 100%; } 
+.mainVisual .cardWrap .cardLeft { width: 256px; position: absolute; left: -160px; top: -100px; } 
+.mainVisual .cardWrap .cardRight { width: 87.5%; /* width: 280px; */ position: absolute; right: -60px; top: 40px; } 
+.mainVisual .titleWrap { width: 100%; position: absolute; bottom: 82px; padding: 0 18px; box-sizing: border-box; } 
+.mainVisual .titleWrap p { color: #a5a5a5; font-size: 14px; line-height: 20px; margin-bottom: 13px; } 
+.mainVisual .titleWrap h2 { font-size: 36px; line-height: 42px; color: #fff; } 
+.mainVisual .logoWrap { width: 100%; position: absolute; bottom: 18px; display: flex; justify-content: space-between; align-items: center; padding: 0 18px; box-sizing: border-box; } 
+.mainVisual .logoWrap .mireAsset { width: 74px; height: auto; opacity: 0.4; } 
+.mainVisual .logoWrap .hyundaiCard { width: 78px; height: auto; } 
 
-.banner p {
-  font-size: 13.65px;
-  color: #ffffff;
-  letter-spacing: -0.05em;
-  text-align: center;
-}
+.promotion .title, .stockSave .title, .goldDiamondBenefit .title,  .solution .title { font-family: "YouandiModernHead"; font-weight: 900;}
+.promotion .title .category, .stockSave .title .category, .goldDiamondBenefit .title .category,  .solution .title .category { display: block; font-size: 14px; color: #f58220; margin-bottom: 12px; font-style: normal; }
+.promotion .title h3 p, .stockSave .title h3, .goldDiamondBenefit .title h3,  .solution .title h3 { font-size: 34px; line-height: 42px; color: #111; }
+.promotion .title h3 p{ color: #fff}
 
-.mainVisual {
-  position: relative;
-  width: 100%;
-  height: 431px;
-  background: url(../img/background.png) repeat center 100%;
-  background-size: 320px 430px;
-  z-index: -1;
-}
-
-.mainVisual .cardWrap {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-}
-
-.mainVisual .cardWrap .cardLeft {
-  width: 256px;
-  position: absolute;
-  left: -160px;
-  top: -100px;
-}
-
-.mainVisual .cardWrap .cardRight {
-  width: 87.5%;
-  /* width: 280px; */
-  position: absolute;
-  right: -60px;
-  top: 40px;
-}
-
-.mainVisual .titleWrap {
-  width: 100%;
-  position: absolute;
-  bottom: 82px;
-  padding: 0 18px;
-  box-sizing: border-box;
-}
-
-.mainVisual .titleWrap p {
-  color: #a5a5a5;
-  font-size: 13px;
-  line-height: 17.92px;
-  margin-bottom: 13px;
-}
-
-.mainVisual .titleWrap h2 {
-  font-size: 37.54px;
-  line-height: 1.25;
-  color: #ffffff;
-}
-
-.mainVisual .logoWrap {
-  width: 100%;
-  position: absolute;
-  bottom: 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 18px;
-  box-sizing: border-box;
-}
-
-.mainVisual .logoWrap .mireAsset {
-  width: 74px;
-  height: auto;
-  opacity: 0.4;
-}
-
-.mainVisual .logoWrap .hyundaiCard {
-  width: 78px;
-  height: auto;
-}
-/**프로모션*/
-.promotion {
-  position: relative;
-  background: #131726;
-}
-
-.promotion .titleWrap {
-  padding: 36px 18px 48px 18px;
-}
-
-.promotion .promotionTopImage {
-  position: absolute;
-  width: 320px;
-  top: 34px;
-  right: 0;
-}
-
-.promotion .contentsWrap {
-  padding: 18px 17px 37px 17px;
-  background: #f4f4f4;
-  border-radius: 17.7px 17.7px 0 0;
-}
-
+.promotion { position: relative; background: #131726; } 
+.promotion .titleWrap { padding: 36px 18px 46px 18px; } 
+.promotion .promotionTopImage { position: absolute; width: 375px; top: 28px; right: 0; } 
+.promotion .contentsWrap { padding: 20px 18px 37px 18px; background: #f4f4f4; border-radius: 17.7px 17.7px 0 0; } 
 .promotion .contentsWrap .benefit,
 .promotion .contentsWrap .targetCard,
 .promotion .contentsWrap .period,
-.promotion .contentsWrap .join {
-  border-radius: 4.27px;
-  box-shadow: 0px 4px 8.46px 0.54px rgba(0, 0, 0, 0.05);
+.promotion .contentsWrap .join { border-radius: 4.27px; box-shadow: 0px 4px 8.46px 0.54px rgba(0, 0, 0, 0.05); } 
+.promotion .contentsWrap > div + div { margin-top: 10px; }
+
+.promotion .benefit { background: #fff; padding: 14px 16px 18px 15px; } 
+.promotion .contentsWrap .contCategory { font-size: 14px; margin-bottom: 6px; color: #f58220;  font-family: "YouandiModernText"; font-weight: bold; } 
+.promotion .contentsWrap .contTitle { font-size: 20px; line-height: 24px; letter-spacing: -0.05em; color: #111; font-family: "YouandiModernText"; font-weight: bold; } 
+.promotion .contentsWrap .contTitle.letter { letter-spacing: -0.075em; } 
+.promotion .benefit .gradeWrap { margin-top: 12px; display: flex; align-items: center; } 
+.promotion .benefit .gradeWrap > div { flex: 1; text-align: center; } 
+.promotion .benefit .gradeWrap div + div { position: relative; } 
+.promotion .benefit .gradeWrap div + div::after { content: ""; display: block; width: 1px; height: 36px; background-color: #d9d9d9; position: absolute; top: 7px; left: 0; } 
+.promotion .benefit .gradeWrap .silver { padding-right: 12px; } 
+.promotion .benefit .gradeWrap .gold { padding: 0 12px; } 
+.promotion .benefit .gradeWrap .diamond { padding: 0 8px 0 12px; } 
+.promotion .gradeWrap .icon { display: flex; align-items: center; justify-content: center; } 
+.promotion .gradeWrap .icon img { width: 22px; } 
+.promotion .gradeWrap .icon em { font-size: 14px; line-height: 16px; color: #666666; margin-left: 4px; font-style: normal; } 
+.promotion .gradeWrap strong { font-weight: 900; display: block; font-size: 14px; margin-top: 4px; letter-spacing: -0.05em; color: #333333; } 
+.promotion .period { padding:18px 12px 14px 12px; background: #ffffff; border-radius: 4.27px; } 
+.promotion .targetCard { border-radius: 4.27px; padding: 18px 128px 18px 12px; background: #ffffff url(../img/promotion_target_background.png) no-repeat right bottom; background-size: auto 100%; } 
+.promotion .join { border-radius: 4.27px; padding: 16px 12px 16px 12px; background: #ffffff; } 
+.promotion .join ol li { color: #333333; word-break: keep-all; padding-left: 1.2em; text-indent: -1.2em; font-weight: 400; } 
+.promotion .contentsWrap .joinButtonWrap { margin: 18px auto 12px auto; text-align: center; } 
+.promotion .joinButton { text-decoration: none; display: inline-block; font-size: 18px; padding: 14px 38px; border-radius: 21.3px; background: #f58220; color: #ffffff; } 
+.promotion .notice { display: block; color: #999999; font-size: 12px; text-align: center; } 
+
+.stockSave { position: relative; padding: 42px 0 38px; background: #ffffff; color: #111; text-align: center; overflow: hidden; } 
+.stockSave .title p { font-size: 16px; margin-top: 12px; letter-spacing: -0.05em; } 
+.stockSave .backText { width: max-content; color: #eeeeee; display: block; margin-top: 10px; opacity: 0.9; font-size: 60px; line-height: 1; white-space: nowrap; user-select: none; animation: textScroll 30s linear infinite; } 
+.stockSave .logoWrap { display: flex; align-items: center; justify-content: center; position: absolute; transform: translate(-50%, 0%); left: 50%; top: 134px; } 
+.stockSave .logoWrap img { width: 33px; } 
+.stockSave .logoWrap img + img { margin-left: 12px; } 
+.stockSave .text { line-height: 1.5; margin-bottom: 14px; } 
+
+@keyframes textScroll { 
+ 0% { transform: translate3d(0, 0, 0); } 
+ 100% { transform: translate3d(-50%, 0, 0); } 
+ }
+
+.stockSave .stockMoreButton { color: #006cff; position: relative; text-decoration: none; padding-right: 12px; } 
+.stockSave .stockMoreButton::after { position: absolute; display: block; content: ""; background: url(../img/more_arrow.png) no-repeat center/cover; width: 6px; height: 8.5px; top: 2px; right: 0px; } 
+
+.goldDiamondBenefit { padding: 34px 18px; background-color: #f4f4f4; } 
+.goldDiamondBenefit .subTitle { margin: 12px 0 20px 0; } 
+/* .goldDiamondBenefit .title .category { margin-bottom: 10px; font-style: normal; }  */
+.goldDiamondBenefit .contentsWrap { display: flex; flex-wrap: wrap; gap: 10px;}
+.goldDiamondBenefit .contentsWrap > div { position:relative; width : calc(50% - 5px); padding: 10px 12px; box-sizing: border-box; border-radius: 5px; background: #ffffff; }
+.goldDiamondBenefit .contentsWrap > div::before { display: block; content: ''; position: absolute; top: 0; bottom: 0; }
+.goldDiamondBenefit .contentsWrap > div.choice1::before { background: url(../img/gold_diamond_benefit_hand.png) no-repeat right bottom; width: 100%; height: auto; background-size: auto 100%; margin-left: -12px; }
+.goldDiamondBenefit .contentsWrap > div.choice2::before { background: url(../img/gold_diamond_benefit_hill.png) no-repeat right bottom; width: 100%; height: auto; background-size: auto 100%; margin-left: -12px; }
+.goldDiamondBenefit .contentsWrap > div.choice3::before { background: url(../img/gold_diamond_benefit_building.png) no-repeat right bottom; width: 100%; height: auto; background-size: auto 100%; margin-left: -12px; }
+.goldDiamondBenefit .contentsWrap > div.choice4::before { background: url(../img/gold_diamond_benefit_golf.png) no-repeat right bottom; width: 100%; height: auto; background-size: auto 100%; margin-left: -12px; }
+/*이미지 가상요소로 넣기 position으로 띄우기 hover*/
+.goldDiamondBenefit .contentsWrap > div em { font-style: normal; color: #f58220; display: block; margin-bottom: 6px; } 
+.goldDiamondBenefit .contentsWrap > div strong { display: block; font-size: 18px; color: #111; margin-bottom: 6px; white-space: pre-line; } 
+.goldDiamondBenefit .contentsWrap > div p { color: #666; } 
+.goldDiamondBenefit .contentsWrap > div:hover { background: #121a3b; } 
+.goldDiamondBenefit .contentsWrap > div:hover strong,
+.goldDiamondBenefit .contentsWrap > div:hover p { color: #fff; } 
+.goldDiamondBenefit .info { position: relative; color: #999; margin-top: 22px; font-size: 12px;  padding-left: 1.2em; } 
+.goldDiamondBenefit .info::before { position: absolute; display: block; content: ""; top: 2px; left: 0; background: url(../img/gold_diamond_benefit_notice_icon.png) no-repeat right bottom; background-size: 9px 9px; width: 9px; height: 9px; } 
+
+.solution { background: #fff; padding: 34px 0; } 
+.solution .title { text-align: center; } 
+.solution .contentsWrap { margin-top: 22px; } 
+.solution .contentsWrap > div { display: flex; } 
+.solution .contentsWrap > div + div { margin-top: 38px; } 
+.solution .contentsWrap > div .cardRight { flex: 1; } 
+.solution .contentsWrap > div .cardLeft img{ width: 150px;} 
+.solution .contentsWrap > div .textWrap strong { font-size: 16px; display: block; margin-bottom: 6px; } 
+.solution .contentsWrap > div .textWrap a { color: #006cff; position: relative; text-decoration: none; padding-right: 12px; } 
+.solution .contentsWrap > div .textWrap a::after { position: absolute; display: block; content: ""; background: url(../img/more_arrow.png) no-repeat center/cover; width: 6px; height: 8.5px; top: 2px; right: 0px; } 
+.solution .contentsWrap > div .cardRight ul li { color: #666666; font-size: 12px; line-height: 15px; } 
+.solution .contentsWrap > div .cardRight .benefit { display: flex; align-items: center; } 
+.solution .contentsWrap > div .cardRight .silverNotice { color: #666666; line-height: 16px; display: block; } 
+.solution .contentsWrap > div .cardRight .benefit .feeBadge { height: 15px; width: auto; margin-left: 2px; } 
+.solution .contentsWrap > div .cardRight .topList { margin-bottom: 6px; border-bottom: 1px solid #dddddd; padding-bottom: 6px; } 
+.solution .contentsWrap .badge { display: inline-block; font-size: 12px; line-height: 14px; padding: 0 4.2px; border: 1px solid #666666; color: #666666; margin-bottom: 4px; } 
+.solution .contentsWrap strong { display: block; font-size: 16px; line-height: 20px; margin-bottom: 6px; white-space: pre-line; } 
+
+.bottomNotice {background: #f4f4f4; padding: 24px 18px 34px 18px;}
+.bottomNotice .noticeListTitle {padding-bottom: 2px; margin-bottom: 8px; border-bottom: 1px solid #040404; color:#040404;}
+.bottomNotice .noticeList.grayDot li {position: relative; padding-left: 6px; color:#666666; word-break: keep-all; letter-spacing: -0.05em; line-height: 16px; font-size: 10px;}
+.bottomNotice .noticeList.grayDot li:before {content: ''; display: block; width: 3px; height: 3px; position: absolute; left: 0; top: 7px; border-radius: 50%; background: #666666;}
+
+@media screen and (max-width: 374px) {
+  .promotion .titleWrap { padding: 36px 18px 40px 18px; }
+  .promotion .title .category, .stockSave .title .category, .goldDiamondBenefit .title .category,  .solution .title .category { font-size: 12px; margin-bottom: 10px; }
+  .promotion .title h3 p, .stockSave .title h3, .goldDiamondBenefit .title h3,  .solution .title h3 { font-size: 28px; line-height: 36px; }
+  .promotion .promotionTopImage { width: 320px; }
+  .promotion .gradeWrap strong { font-size: 12px; }
+  .promotion .benefit .gradeWrap .gold {padding: 0 10px;}
+  .promotion .benefit .gradeWrap .diamond {padding: 0 0 0 12px;}
 }
 
-.promotion .contentsWrap > div + div {
-  margin-top: 9px;
-}
-
-/**프로모션-혜택*/
-.promotion .benefit {
-  background: #ffffff;
-  padding: 14px 16px 18px 15px;
-}
-
-.promotion .contentsWrap .category {
-  line-height: 1.34;
-  margin-bottom: 8px;
-  color: #f58220;
-}
-
-.promotion .contentsWrap .title {
-  font-size: 17px;
-  line-height: 1.19;
-  color: #111111;
-}
-
-.promotion .contentsWrap .title.letter {
-  letter-spacing: -0.075em;
-}
-
-.promotion .benefit .gradeWrap {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.promotion .benefit .gradeWrap > div {
-  flex: 1;
-  text-align: center;
-}
-
-.promotion .benefit .gradeWrap div + div {
-  position: relative;
-}
-
-.promotion .benefit .gradeWrap div + div::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 30px;
-  background-color: #d9d9d9;
-  position: absolute;
-  top: 7px;
-  left: 0;
-}
-
-.promotion .benefit .gradeWrap .silver {
-  padding-right: 12px;
-}
-
-.promotion .benefit .gradeWrap .gold {
-  padding: 0 12px;
-}
-
-.promotion .benefit .gradeWrap .diamond {
-  padding-left: 12px;
-}
-
-.promotion .gradeWrap .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.promotion .gradeWrap .icon img {
-  width: 20px;
-}
-
-.promotion .gradeWrap .icon em {
-  line-height: 1.25;
-  color: #666666;
-  margin-left: 4px;
-  font-style: normal;
-}
-
-.promotion .gradeWrap strong {
-  display: block;
-  font-size: 12.8px;
-  line-height: 1.16;
-  margin-top: 6px;
-  letter-spacing: -0.05em;
-}
-
-.promotion .period {
-  padding: 18.8px 13.6px 14.9px 13.6px;
-  background: #ffffff;
-  border-radius: 4.27px;
-}
-
-/**타이틀공통*/
-.title .category {
-  display: block;
-  color: #f58220;
-  margin-bottom: 14px;
-}
-
-.title h3 > span {
-  display: block;
-  font-size: 29px;
-  line-height: 1.2;
-  color: #ffffff;
-}
-
-.title h3 {
-  display: block;
-  font-size: 29px;
-  line-height: 1.2;
-  color: #111111;
-}
-
-.promotion .targetCard {
-  border-radius: 4.27px;
-  padding: 18px 13px 16px 13px;
-  background: #ffffff url(../img/target_card_img.png) no-repeat right;
-  background-size: 287px auto;
-}
-
-.promotion .join {
-  border-radius: 4.27px;
-  padding: 18.8px 12.8px 17px 12.8px;
-  background: #ffffff;
-}
-
-.promotion .join ol li {
-  color: #333333;
-  line-height: 1.5;
-}
-
-.promotion .contentsWrap .joinButtonWrap {
-  margin: 18px auto 12px auto;
-  text-align: center;
-}
-
-.promotion .joinButton {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 17px;
-  padding: 14px 30px;
-  border-radius: 21.3px;
-  background: #f58220;
-  color: #ffffff;
-}
-
-.promotion .notice {
-  display: block;
-  color: #999999;
-  font-size: 10.5px;
-  text-align: center;
-}
-
-.stockSaveUp {
-  position: relative;
-  padding: 42px 0 42px;
-  background: #ffffff;
-  color: #111111;
-  text-align: center;
-  overflow: hidden;
-}
-
-.stockSaveUp .title h3 {
-  font-size: 29px;
-}
-
-.stockSaveUp .title p {
-  font-size: 14.5px;
-  line-height: 1.5;
-  margin-top: 12px;
-  letter-spacing: -0.005em;
-}
-
-.stockSaveUp .backText {
-  width: max-content;
-  color: #eeeeee;
-  display: block;
-  margin-top: 14px;
-  opacity: 0.9;
-  font-size: 60px;
-  line-height: 1;
-  white-space: nowrap;
-  user-select: none;
-  animation: textScroll 30s linear infinite;
-}
-
-.stockSaveUp .logoWrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  transform: translate(-50%, 0%);
-  left: 50%;
-  top: 134px;
-}
-
-.stockSaveUp .logoWrap img {
-  width: 33px;
-}
-
-.stockSaveUp .logoWrap img + img {
-  margin-left: 12px;
-}
-
-.stockSaveUp .text {
-  line-height: 1.5;
-  margin-bottom: 14px;
-}
-
-@keyframes textScroll {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-
-.stockSaveUp .stockMoreButton {
-  color: #006cff;
-  position: relative;
-  text-decoration: none;
-  padding-right: 12px;
-}
-
-.stockSaveUp .stockMoreButton::after {
-  position: absolute;
-  display: block;
-  content: "";
-  background: url(../img/more_arrow.png) no-repeat center/cover;
-  width: 6px;
-  height: 8.5px;
-  top: 2px;
-  right: 0px;
-}
-
-.goldDiamondBenefit {
-  padding: 34px 18px;
-  background-color: #f4f4f4;
-}
-
-@media (min-width: 750px) {
-  #container {
-    max-width: 375px;
-  }
-}
-@media (min-width: 1199px) {
-  #container {
-    max-width: 750px;
-  }
-
-  .banner {
-    padding: 22px 110px;
-  }
-
-  .banner p {
-    font-size: 32px;
-    color: #ffffff;
-    letter-spacing: -0.05em;
-    text-align: center;
-  }
-
-  .mainVisual {
-    height: 1010px;
-  }
-
-  .mainVisual .cardWrap .cardLeft {
-    width: 511px;
-    left: -311px;
-    top: -162px;
-  }
-
-  .mainVisual .cardWrap .cardRight {
-    width: 650px;
-    right: -140px;
-    top: 95px;
-  }
-
-  .mainVisual .titleWrap {
-    bottom: 189px;
-    padding: 0 40px;
-  }
-
-  .mainVisual .titleWrap p {
-    font-size: 30px;
-    line-height: 42px;
-    margin-bottom: 33px;
-  }
-
-  .mainVisual .titleWrap h2 {
-    font-size: 88px;
-  }
-
-  .mainVisual .logoWrap {
-    align-items: flex-end;
-    bottom: 39px;
-    padding: 0 40px;
-  }
-
-  .mainVisual .logoWrap .mireAsset {
-    width: 173px;
-  }
-
-  .mainVisual .logoWrap .hyundaiCard {
-    width: 182px;
-  }
-
-  .promotion .titleWrap {
-    padding: 89px 40px 111px 40px;
-  }
-
-  .promotion .promotionTopImage {
-    width: 750px;
-    top: 76px;
-  }
-
-  /**타이틀공통*/
-  .title .category {
-    font-size: 28px;
-    line-height: 1.5;
-    color: #f58220;
-    margin-bottom: 30px;
-  }
-
-  .title h3 > span {
-    font-size: 68px;
-    line-height: 1.3;
-    color: #ffffff;
-  }
-
-  .title h3 {
-    display: block;
-    font-size: 68px;
-    line-height: 1.2;
-    color: #111111;
-  }
-
-  .promotion .contentsWrap > div + div {
-    margin-top: 24px;
-  }
-
-  .promotion .contentsWrap {
-    padding: 40px 40px 80px 40px;
-  }
-
-  .promotion .benefit {
-    padding: 31px 32px;
-    border-radius: 10px;
-  }
-
-  .promotion .benefit .gradeWrap div + div::after {
-    width: 2px;
-    top: 15px;
-    height: 70px;
-  }
-
-  .promotion .contentsWrap .category {
-    font-size: 26px;
-    line-height: 1.34;
-    margin-bottom: 18px;
-  }
-
-  .promotion .contentsWrap .title {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -0.05em;
-  }
-
-  .promotion .benefit .gradeWrap {
-    margin-top: 30px;
-  }
-
-  .promotion .targetCard {
-    padding: 40px 30px 40px 32px;
-    border-radius: 10px;
-    background-size: cover;
-  }
-
-  .promotion .gradeWrap .icon img {
-    width: 46px;
-  }
-
-  .promotion .gradeWrap .icon em {
-    margin-right: 13px;
-    font-size: 28px;
-  }
-
-  .promotion .benefit .gradeWrap .silver {
-    padding-right: 30px;
-  }
-
-  .promotion .benefit .gradeWrap .gold {
-    padding: 0 30px;
-  }
-
-  .promotion .benefit .gradeWrap .diamond {
-    padding-left: 30px;
-  }
-
-  .promotion .gradeWrap strong {
-    margin-top: 14px;
-    font-size: 30px;
-  }
-
-  .promotion .period {
-    padding: 44px 32px 35px 32px;
-  }
-
-  .promotion .join {
-    border-radius: 10px;
-    padding: 44px 30px 40px 30px;
-  }
-
-  .promotion .join ol li {
-    font-size: 28px;
-  }
-
-  .promotion .contentsWrap .joinButtonWrap {
-    margin: 40px 0 30px 0;
-  }
-
-  .promotion .contentsWrap .joinButton {
-    padding: 30px 90px;
-    font-size: 40px;
-    border-radius: 50px;
-  }
-
-  .promotion .notice {
-    font-size: 24px;
-  }
-
-  .stockSaveUp {
-    padding: 100px 0 98px 0;
-  }
-
-  .stockSaveUp .title h3 {
-    font-size: 68px;
-  }
-
-  .stockSaveUp .title p {
-    margin-top: 30px;
-    font-size: 34px;
-  }
-
-  .stockSaveUp .backText {
-    font-size: 140px;
-    margin-top: 34px;
-  }
-
-  .stockSaveUp .logoWrap img {
-    width: 75px;
-  }
-
-  .stockSaveUp .logoWrap img + img {
-    margin-left: 30px;
-  }
-
-  .stockSaveUp .logoWrap {
-    top: 313px;
-  }
-
-  .stockSaveUp .text {
-    font-size: 28px;
-    margin-bottom: 38px;
-  }
-
-  .stockSaveUp .stockMoreButton {
-    font-size: 28px;
-    padding-right: 24px;
-  }
-
-  .stockSaveUp .stockMoreButton::after {
-    top: 6px;
-    width: 11px;
-    height: 20px;
-  }
-
-  .goldDiamondBenefit h3 {
-    margin-bottom: 12px;
-  }
-}
+@media (min-width: 750px){
+ body { background-color: #282828; }
+ #container { max-width: 375px; } 
+ }
+
+@media (min-width: 1199px){ 
+ #container { max-width: 750px; } 
+ .banner { padding: 24px 110px; font-size: 32px; line-height: 38px; color: #ffffff; letter-spacing: -0.05em; text-align: center; } 
+ .banner .italic { font-size: 32px; line-height: 38px; } 
+ .mainVisual { height: 1010px; } 
+ .mainVisual .cardWrap .cardLeft { width: 511px; left: -311px; top: -162px; } 
+ .mainVisual .cardWrap .cardRight { width: auto; right: -140px; top: 95px; } 
+ .mainVisual .titleWrap { bottom: 166px; padding: 0 40px; } 
+ .mainVisual .titleWrap p { font-size: 30px; line-height: 42px; margin-bottom: 33px; } 
+ .mainVisual .titleWrap h2 { font-size: 88px; } 
+ .mainVisual .logoWrap { align-items: flex-end; bottom: 39px; padding: 0 40px; } 
+ .mainVisual .logoWrap .mireAsset { width: 173px; } 
+ .mainVisual .logoWrap .hyundaiCard { width: 182px; } 
+
+ /**타이틀공통*/
+ /* .title .category { font-size: 28px; line-height: 34px; margin-bottom: 20px; }  */
+ /* .title h3 > span { font-size: 68px; line-height: 76px; }  */
+ /* .title h3 { display: block; font-size: 68px; line-height: 1; }  */
+
+ .solution .contentsWrap > div .cardLeft img{ width: 100%;}
+ 
+ .promotion .titleWrap { padding: 89px 40px 111px 40px; } 
+ .promotion .promotionTopImage { width: 750px; top: 76px; } 
+ .promotion .contentsWrap > div + div { margin-top: 24px; } 
+ .promotion .contentsWrap { padding: 40px 40px 80px 40px; } 
+ .promotion .benefit { padding: 31px 32px; border-radius: 10px; } 
+ .promotion .benefit .gradeWrap div + div::after { width: 2px; top: 15px; height: 70px; } 
+ .promotion .contentsWrap .benefit,
+ .promotion .contentsWrap .targetCard,
+ .promotion .contentsWrap .period,
+ .promotion .contentsWrap .join { border-radius: 10px;} 
+ .promotion .contentsWrap .category { font-size: 26px; line-height: 1.2; margin-bottom: 18px; } 
+ .promotion .contentsWrap .title { font-size: 40px; line-height: 48px; letter-spacing: -0.05em; } 
+ .promotion .benefit .gradeWrap { margin-top: 30px; } 
+ .promotion .targetCard { padding: 40px 30px 40px 32px; border-radius: 10px; background-size: cover; } 
+ .promotion .gradeWrap .icon img { width: 46px; } 
+ .promotion .gradeWrap .icon em { margin-right: 13px; font-size: 28px; } 
+ .promotion .benefit .gradeWrap .silver { padding-right: 30px; } 
+ .promotion .benefit .gradeWrap .gold { padding: 0 30px; } 
+ .promotion .benefit .gradeWrap .diamond { padding-left: 30px; } 
+ .promotion .gradeWrap strong { margin-top: 14px; font-size: 30px; } 
+ .promotion .period { padding: 44px 32px 35px 32px; } 
+ .promotion .join { border-radius: 10px; padding: 44px 30px 40px 30px; } 
+ .promotion .join ol li { font-size: 28px; line-height: 48px; } 
+ .promotion .contentsWrap .joinButtonWrap { margin: 40px 0 30px 0; } 
+ .promotion .contentsWrap .joinButton { padding: 30px 90px; font-size: 40px; border-radius: 50px; } 
+ .promotion .notice { font-size: 24px; } 
+ 
+ .stockSave { padding: 100px 0 98px 0; } 
+ .stockSave .title p { margin-top: 30px; font-size: 34px; } 
+ .stockSave .backText { font-size: 140px; margin-top: 24px; } 
+ .stockSave .logoWrap img { width: 75px; } 
+ .stockSave .logoWrap img + img { margin-left: 30px; } 
+ .stockSave .logoWrap { top: 313px; } 
+ .stockSave .text { font-size: 28px; margin-bottom: 38px; } 
+ .stockSave .stockMoreButton { font-size: 28px; padding-right: 24px; } 
+ .stockSave .stockMoreButton::after { top: 6px; width: 11px; height: 20px; } 
+ 
+ .goldDiamondBenefit { padding: 80px 40px; } 
+ .goldDiamondBenefit .subTitle { font-size: 28px; margin: 26px 0 48px 0; } 
+ .goldDiamondBenefit .contentsWrap { margin: 0 -20px -20px 0; } 
+ .goldDiamondBenefit .contentsWrap > div { cursor: pointer; width: calc(50% - 20px); margin: 0 20px 20px 0; padding: 30px 18px; border-radius: 10px; } 
+ .goldDiamondBenefit .contentsWrap > div em { font-size: 24px; line-height: 28px; margin-bottom: 20px; } 
+ .goldDiamondBenefit .contentsWrap > div strong { font-size: 40px; line-height: 46px; margin-bottom: 32px; } 
+ .goldDiamondBenefit .contentsWrap > div p { font-size: 24px; line-height: 28px; } 
+ .goldDiamondBenefit .contentsWrap > div::after{ background-size: cover; bottom: 24px; right: 22px; }
+ .goldDiamondBenefit .contentsWrap > div.choice1::after,
+ .goldDiamondBenefit .contentsWrap > div.choice4::after { width: 62px; height: 56px; } 
+ .goldDiamondBenefit .contentsWrap > div.choice2::after { width: 56px; height: 36px;  } 
+ .goldDiamondBenefit .contentsWrap > div.choice3::after { width: 59px; height: 54px;  } 
+ .goldDiamondBenefit .contentsWrap > div.choice4::after { width: 64px; height: 56px;  } 
+ .goldDiamondBenefit .info { margin-top: 50px; font-size: 24px; } 
+ .goldDiamondBenefit .info::before { width: 20px; height: 20px; top: 6px; background-size: cover; } 
+ }

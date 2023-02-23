@@ -17,9 +17,10 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
-  font-family: 'YouandiModernHB';
-  font-weight: 400;
+  /* font-family: 'YouandiModernText';
+  font-weight: 400; */
   font-size: 12px;
+  line-height: 18px;
   letter-spacing: -0.025em;
 }
 article,
@@ -59,22 +60,17 @@ table {
   border-spacing: 0;
 }
 
-.ymhb {
-  font-family: "YouandiModernHB";
+.ymhead {
+  font-family: "YouandiModernHead";
+  font-weight: bold;
 }
 
-.ymheb {
-  font-family: "YouandiModernHEB";
+.ymheadBold {
+  font-family: "YouandiModernHead";
+  font-weight: 900;
 }
 
-.ymhr {
-  font-family: "YouandiModernHR";
-}
-
-.ymtb {
-  font-family: "YouandiModernTB";
-}
-
-.ymtr {
-  font-family: "YouandiModernTR";
+.ymText {
+  font-family: "YouandiModernText";
+  font-weight: bold;
 }
