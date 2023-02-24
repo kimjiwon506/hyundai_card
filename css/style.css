@@ -3,6 +3,7 @@
 @import url("./reset.css");
 
 #container { width: 100%; margin: 0 auto; min-width: 320px; } 
+#container > div { margin-top: -1px;}
 
 .banner { background-color: #df632c; padding: 8px 52px; font-size: 14px; line-height: 20px; color: #fff; letter-spacing: -0.05em; text-align: center; } 
 .banner .italic { font-style: italic; font-size: 14px; line-height: 20px; } 
@@ -19,62 +20,59 @@
 .mainVisual .logoWrap .hyundaiCard { width: 78px; height: auto; } 
 
 .promotion .title, .stockSave .title, .goldDiamondBenefit .title,  .solution .title { font-family: "YouandiModernHead"; font-weight: 900;}
-.promotion .title .category, .stockSave .title .category, .goldDiamondBenefit .title .category,  .solution .title .category { display: block; font-size: 14px; color: #f58220; margin-bottom: 12px; font-style: normal; }
-.promotion .title h3 p, .stockSave .title h3, .goldDiamondBenefit .title h3,  .solution .title h3 { font-size: 34px; line-height: 42px; color: #111; }
-.promotion .title h3 p{ color: #fff}
-
+.promotion .title .category, .stockSave .title .category, .goldDiamondBenefit .title .category,  .solution .title .category { display: block; font-size: 14px; color: #f58220; margin-bottom: 12px; font-style: normal; font-weight: 900; }
+.promotion .title h3 p, .stockSave .title h3, .goldDiamondBenefit .title h3,  .solution .title h3 { font-size: 34px; line-height: 42px; color: #111; font-weight: 900;}
+.promotion .title h3 p { color: #fff }
 .promotion { position: relative; background: #131726; } 
 .promotion .titleWrap { padding: 36px 18px 46px 18px; } 
 .promotion .promotionTopImage { position: absolute; width: 375px; top: 28px; right: 0; } 
-.promotion .contentsWrap { padding: 20px 18px 37px 18px; background: #f4f4f4; border-radius: 17.7px 17.7px 0 0; } 
+.promotion .contentsWrap { padding: 20px 18px 42px 18px; background: #f4f4f4; border-radius: 17.7px 17.7px 0 0; } 
 .promotion .contentsWrap .benefit,
 .promotion .contentsWrap .targetCard,
 .promotion .contentsWrap .period,
 .promotion .contentsWrap .join { border-radius: 4.27px; box-shadow: 0px 4px 8.46px 0.54px rgba(0, 0, 0, 0.05); } 
 .promotion .contentsWrap > div + div { margin-top: 10px; }
-
 .promotion .benefit { background: #fff; padding: 14px 16px 18px 15px; } 
-.promotion .contentsWrap .contCategory { font-size: 14px; margin-bottom: 6px; color: #f58220;  font-family: "YouandiModernText"; font-weight: bold; } 
-.promotion .contentsWrap .contTitle { font-size: 20px; line-height: 24px; letter-spacing: -0.05em; color: #111; font-family: "YouandiModernText"; font-weight: bold; } 
+.promotion .contentsWrap .contCategory { font-size: 14px; margin-bottom: 6px; color: #f58220;  font-family: "YouandiModernHead"; font-weight: bold; } 
+.promotion .contentsWrap .contTitle { font-size: 20px; line-height: 24px; color: #111; font-family: "YouandiModernText"; font-weight: bold; } 
 .promotion .contentsWrap .contTitle.letter { letter-spacing: -0.075em; } 
 .promotion .benefit .gradeWrap { margin-top: 12px; display: flex; align-items: center; } 
 .promotion .benefit .gradeWrap > div { flex: 1; text-align: center; } 
 .promotion .benefit .gradeWrap div + div { position: relative; } 
-.promotion .benefit .gradeWrap div + div::after { content: ""; display: block; width: 1px; height: 36px; background-color: #d9d9d9; position: absolute; top: 7px; left: 0; } 
+.promotion .benefit .gradeWrap div + div::after { content: ""; display: block; width: 1px; height: 35px; background-color: #d9d9d9; position: absolute; top: 4px; left: 0; } 
 .promotion .benefit .gradeWrap .silver { padding-right: 12px; } 
 .promotion .benefit .gradeWrap .gold { padding: 0 12px; } 
-.promotion .benefit .gradeWrap .diamond { padding: 0 8px 0 12px; } 
+.promotion .benefit .gradeWrap .diamond { padding: 0 0px 0 12px; } 
 .promotion .gradeWrap .icon { display: flex; align-items: center; justify-content: center; } 
 .promotion .gradeWrap .icon img { width: 22px; } 
-.promotion .gradeWrap .icon em { font-size: 14px; line-height: 16px; color: #666666; margin-left: 4px; font-style: normal; } 
+.promotion .gradeWrap .icon em { font-size: 14px; line-height: 22px; color: #666666; margin-left: 4px; font-style: normal; } 
 .promotion .gradeWrap strong { font-weight: 900; display: block; font-size: 14px; margin-top: 4px; letter-spacing: -0.05em; color: #333333; } 
 .promotion .period { padding:18px 12px 14px 12px; background: #ffffff; border-radius: 4.27px; } 
 .promotion .targetCard { border-radius: 4.27px; padding: 18px 128px 18px 12px; background: #ffffff url(../img/promotion_target_background.png) no-repeat right bottom; background-size: auto 100%; } 
-.promotion .join { border-radius: 4.27px; padding: 16px 12px 16px 12px; background: #ffffff; } 
-.promotion .join ol li { color: #333333; word-break: keep-all; padding-left: 1.2em; text-indent: -1.2em; font-weight: 400; } 
-.promotion .contentsWrap .joinButtonWrap { margin: 18px auto 12px auto; text-align: center; } 
-.promotion .joinButton { text-decoration: none; display: inline-block; font-size: 18px; padding: 14px 38px; border-radius: 21.3px; background: #f58220; color: #ffffff; } 
-.promotion .notice { display: block; color: #999999; font-size: 12px; text-align: center; } 
+.promotion .join { border-radius: 4.27px; padding: 18px 16px; background: #ffffff; } 
+.promotion .join ol li { color: #333333; word-break: keep-all; font-size: 14px; line-height: 20px; padding-left: 1.2em; text-indent: -1.2em; font-weight: 400; } 
+.promotion .contentsWrap .joinButtonWrap { margin: 20px auto 14px auto; text-align: center; } 
+.promotion .joinButton { text-decoration: none; display: inline-block; font-size: 20px; padding: 14px 46px; border-radius: 25px; background: #f58220; color: #ffffff; } 
+.promotion .notice { display: block; color: #999999; text-align: center; font-weight: 400; } 
 
-.stockSave { position: relative; padding: 42px 0 38px; background: #ffffff; color: #111; text-align: center; overflow: hidden; } 
-.stockSave .title p { font-size: 16px; margin-top: 12px; letter-spacing: -0.05em; } 
-.stockSave .backText { width: max-content; color: #eeeeee; display: block; margin-top: 10px; opacity: 0.9; font-size: 60px; line-height: 1; white-space: nowrap; user-select: none; animation: textScroll 30s linear infinite; } 
-.stockSave .logoWrap { display: flex; align-items: center; justify-content: center; position: absolute; transform: translate(-50%, 0%); left: 50%; top: 134px; } 
-.stockSave .logoWrap img { width: 33px; } 
-.stockSave .logoWrap img + img { margin-left: 12px; } 
-.stockSave .text { line-height: 1.5; margin-bottom: 14px; } 
+.stockSave { position: relative; padding: 50px 0 46px; background: #ffffff; color: #111; text-align: center; overflow: hidden; } 
+.stockSave .title p { font-family: "YouandiModernHead"; font-weight: bold; font-size: 18px; margin-top: 12px; letter-spacing: -0.05em; } 
+.stockSave .backText { font-size: 70px; width: max-content; color: #eeeeee; display: block; margin-top: 20px; opacity: 0.9; line-height: 60px; white-space: nowrap; user-select: none; animation: textScroll 30s linear infinite; } 
+.stockSave .logoWrap { display: flex; align-items: center; justify-content: center; position: absolute; transform: translate(-50%, 0%); left: 50%; top: 160px; } 
+.stockSave .logoWrap img { width: 38px; } 
+.stockSave .logoWrap img + img { margin-left: 14px; } 
+.stockSave .text { font-family: "YouandiModernText"; font-weight: 400; font-size: 14px; line-height: 21px; margin: 10px 0 14px 0; } 
 
 @keyframes textScroll { 
  0% { transform: translate3d(0, 0, 0); } 
  100% { transform: translate3d(-50%, 0, 0); } 
  }
 
-.stockSave .stockMoreButton { color: #006cff; position: relative; text-decoration: none; padding-right: 12px; } 
-.stockSave .stockMoreButton::after { position: absolute; display: block; content: ""; background: url(../img/more_arrow.png) no-repeat center/cover; width: 6px; height: 8.5px; top: 2px; right: 0px; } 
+.stockSave .stockMoreButton { font-size: 14px; line-height: 21px; font-family: "YouandiModernHead"; font-weight: bold; color: #006cff; position: relative; text-decoration: none; padding-right: 12px; } 
+.stockSave .stockMoreButton::after { position: absolute; display: block; content: ""; background: url(../img/more_arrow.png) no-repeat center/cover; width: 6px; height: 10px; top: 3px; right: 0px; } 
 
 .goldDiamondBenefit { padding: 34px 18px; background-color: #f4f4f4; } 
-.goldDiamondBenefit .subTitle { margin: 12px 0 20px 0; } 
-/* .goldDiamondBenefit .title .category { margin-bottom: 10px; font-style: normal; }  */
+.goldDiamondBenefit .subTitle { font-family: "YouandiModernHead"; font-size: 14px; font-weight: 400; margin: 8px 0 20px 0; } 
 .goldDiamondBenefit .contentsWrap { display: flex; flex-wrap: wrap; gap: 10px;}
 .goldDiamondBenefit .contentsWrap > div { position:relative; width : calc(50% - 5px); padding: 10px 12px; box-sizing: border-box; border-radius: 5px; background: #ffffff; }
 .goldDiamondBenefit .contentsWrap > div::before { display: block; content: ''; position: absolute; top: 0; bottom: 0; }
@@ -82,47 +80,61 @@
 .goldDiamondBenefit .contentsWrap > div.choice2::before { background: url(../img/gold_diamond_benefit_hill.png) no-repeat right bottom; width: 100%; height: auto; background-size: auto 100%; margin-left: -12px; }
 .goldDiamondBenefit .contentsWrap > div.choice3::before { background: url(../img/gold_diamond_benefit_building.png) no-repeat right bottom; width: 100%; height: auto; background-size: auto 100%; margin-left: -12px; }
 .goldDiamondBenefit .contentsWrap > div.choice4::before { background: url(../img/gold_diamond_benefit_golf.png) no-repeat right bottom; width: 100%; height: auto; background-size: auto 100%; margin-left: -12px; }
-/*이미지 가상요소로 넣기 position으로 띄우기 hover*/
-.goldDiamondBenefit .contentsWrap > div em { font-style: normal; color: #f58220; display: block; margin-bottom: 6px; } 
-.goldDiamondBenefit .contentsWrap > div strong { display: block; font-size: 18px; color: #111; margin-bottom: 6px; white-space: pre-line; } 
-.goldDiamondBenefit .contentsWrap > div p { color: #666; } 
+.goldDiamondBenefit .contentsWrap > div em { font-style: normal; color: #f58220; display: block; margin-bottom: 6px; font-weight: 900;} 
+.goldDiamondBenefit .contentsWrap > div strong { display: block; font-size: 20px; font-weight: 900; line-height: 24px; color: #111; white-space: pre-line; word-break: keep-all; } 
+.goldDiamondBenefit .contentsWrap > div p { font-family: "YouandiModernText"; margin-top: 20px; font-weight: 400; color: #666; } 
 .goldDiamondBenefit .contentsWrap > div:hover { background: #121a3b; } 
 .goldDiamondBenefit .contentsWrap > div:hover strong,
 .goldDiamondBenefit .contentsWrap > div:hover p { color: #fff; } 
-.goldDiamondBenefit .info { position: relative; color: #999; margin-top: 22px; font-size: 12px;  padding-left: 1.2em; } 
-.goldDiamondBenefit .info::before { position: absolute; display: block; content: ""; top: 2px; left: 0; background: url(../img/gold_diamond_benefit_notice_icon.png) no-repeat right bottom; background-size: 9px 9px; width: 9px; height: 9px; } 
+.goldDiamondBenefit .info { font-family: "YouandiModernHead"; font-weight: 400; position: relative; color: #999; margin-top: 22px; font-size: 12px;  padding-left: 1.2em; word-break: keep-all; } 
+.goldDiamondBenefit .info::before { position: absolute; display: block; content: ""; top: 4px; left: 0; background: url(../img/gold_diamond_benefit_notice_icon.png) no-repeat right bottom; background-size: 10px 10px; width: 10px; height: 10px; } 
 
-.solution { background: #fff; padding: 34px 0; } 
+.solution { background: #fff; padding: 38px 0; } 
 .solution .title { text-align: center; } 
-.solution .contentsWrap { margin-top: 22px; } 
+.solution .contentsWrap { max-width: 375px; margin: 20px auto auto auto; } 
 .solution .contentsWrap > div { display: flex; } 
 .solution .contentsWrap > div + div { margin-top: 38px; } 
-.solution .contentsWrap > div .cardRight { flex: 1; } 
+.solution .contentsWrap > div .cardRight { flex: 1; padding-right: 20px; } 
 .solution .contentsWrap > div .cardLeft img{ width: 150px;} 
-.solution .contentsWrap > div .textWrap strong { font-size: 16px; display: block; margin-bottom: 6px; } 
+.solution .contentsWrap > div .textWrap { padding-left: 20px;}
+.solution .contentsWrap > div .textWrap strong.name { font-size: 18px; line-height: 22px; display: block; margin-bottom: 6px; } 
 .solution .contentsWrap > div .textWrap a { color: #006cff; position: relative; text-decoration: none; padding-right: 12px; } 
 .solution .contentsWrap > div .textWrap a::after { position: absolute; display: block; content: ""; background: url(../img/more_arrow.png) no-repeat center/cover; width: 6px; height: 8.5px; top: 2px; right: 0px; } 
-.solution .contentsWrap > div .cardRight ul li { color: #666666; font-size: 12px; line-height: 15px; } 
-.solution .contentsWrap > div .cardRight .benefit { display: flex; align-items: center; } 
-.solution .contentsWrap > div .cardRight .silverNotice { color: #666666; line-height: 16px; display: block; } 
+.solution .contentsWrap > div .cardRight ul li { color: #666; font-size: 14px; line-height: 18px; font-weight: 400; word-break: keep-all; padding-left: 0.8em; text-indent: -0.8em; letter-spacing: -0.05em;} 
+.solution .contentsWrap > div .cardRight .benefit { font-family: "YouandiModernHead"; font-size: 14px; font-weight: 900; display: flex; align-items: center; margin-bottom: 6px; } 
+.solution .contentsWrap > div .cardRight .benefit p { font-size: 14px;}
+.solution .contentsWrap > div .cardRight .silverNotice { color: #666; font-size: 14px; display: block; word-break: keep-all; font-family: "YouandiModernText"; font-weight: 400; } 
 .solution .contentsWrap > div .cardRight .benefit .feeBadge { height: 15px; width: auto; margin-left: 2px; } 
-.solution .contentsWrap > div .cardRight .topList { margin-bottom: 6px; border-bottom: 1px solid #dddddd; padding-bottom: 6px; } 
-.solution .contentsWrap .badge { display: inline-block; font-size: 12px; line-height: 14px; padding: 0 4.2px; border: 1px solid #666666; color: #666666; margin-bottom: 4px; } 
-.solution .contentsWrap strong { display: block; font-size: 16px; line-height: 20px; margin-bottom: 6px; white-space: pre-line; } 
+.solution .contentsWrap > div .cardRight .topList { margin-bottom: 6px; border-bottom: 1px solid #ddd; padding-bottom: 6px; } 
+.solution .contentsWrap .badge { display: inline-block; font-size: 12px; line-height: 14px; padding: 0 4.2px; border: 1px solid #666; color: #666; margin-bottom: 4px; font-family: "YouandiModernHead"; font-weight: 400; } 
+.solution .contentsWrap strong { font-family: "YouandiModernHead"; font-weight: 900; display: block; font-size: 20px; line-height: 24px; margin-bottom: 6px; white-space: pre-line; } 
 
-.bottomNotice {background: #f4f4f4; padding: 24px 18px 34px 18px;}
-.bottomNotice .noticeListTitle {padding-bottom: 2px; margin-bottom: 8px; border-bottom: 1px solid #040404; color:#040404;}
-.bottomNotice .noticeList.grayDot li {position: relative; padding-left: 6px; color:#666666; word-break: keep-all; letter-spacing: -0.05em; line-height: 16px; font-size: 10px;}
-.bottomNotice .noticeList.grayDot li:before {content: ''; display: block; width: 3px; height: 3px; position: absolute; left: 0; top: 7px; border-radius: 50%; background: #666666;}
+.bottomNotice { background: #f4f4f4; padding: 24px 20px 34px 20px;}
+.bottomNotice > div + div { margin-top: 26px; }
+.bottomNotice .categoryTitle { display: block; margin-bottom: 18px; font-size: 14px; line-height: 20px; font-style: normal; color:#f58220; font-family: "YouandiModernHead"; font-weight: 900; }
+.bottomNotice .noticeListTitle { font-family: "YouandiModernHead"; font-weight: bold; font-size: 14px; line-height: 20px; letter-spacing: -0.05em; padding-bottom: 2px; margin-bottom: 8px; border-bottom: 1px solid #040404; color:#040404;}
+.bottomNotice .noticeList.grayDot li { font-weight: 400; position: relative; padding-left: 8px; color:#666; word-break: keep-all; letter-spacing: -0.05em; line-height: 20px; font-size: 12px;}
+.bottomNotice .noticeList.grayDot li:before { content: ''; display: block; width: 3px; height: 3px; position: absolute; left: 0; top: 8px; border-radius: 50%; background: #666;}
+.bottomNotice .investNoti .noticeList  { padding-bottom: 12px; border-bottom: 1px solid #ddd; }
+.bottomNotice .investNoti .investDue { color: #666; padding: 14px 0 14px 0; font-weight: 400; }
+.bottomNotice .investNoti .investDue p + p { margin-top: 2px; }
+.bottomNotice .feeLevel { line-height: 20px; color: #666; font-weight: 400; margin-bottom: 16px; }
+.bottomNotice .noticeList { font-family: "YouandiModernText"; color: #666; font-weight: 400; }
+.bottomNotice .noticeList.blackDot .list { font-weight: 400; position: relative; padding-left: 8px; word-break: keep-all; letter-spacing: -0.05em; line-height: 20px; font-size: 12px; }
+.bottomNotice .noticeList.blackDot .list:before { content: ''; display: block; width: 3px; height: 3px; position: absolute; left: 0; top: 8px; border-radius: 50%; background: #111;}
+.bottomNotice .noticeList .pay { background: #dce0e8; padding: 8px; border-radius: 8px; color: #333; letter-spacing: -0.05em; word-break: keep-all; margin: 8px 0 10px 0; }
+.bottomNotice .noticeList .pay li { padding-left: 0.6em; text-indent: -0.6em; letter-spacing: -0.05em; }
+.bottomNotice .noticeList .pay li strong { font-weight: bold; }
 
 @media screen and (max-width: 374px) {
   .promotion .titleWrap { padding: 36px 18px 40px 18px; }
-  .promotion .title .category, .stockSave .title .category, .goldDiamondBenefit .title .category,  .solution .title .category { font-size: 12px; margin-bottom: 10px; }
-  .promotion .title h3 p, .stockSave .title h3, .goldDiamondBenefit .title h3,  .solution .title h3 { font-size: 28px; line-height: 36px; }
+  .promotion .title .category, .stockSave .title .category, .goldDiamondBenefit .title .category,  .solution .title .category { font-size: 12px; margin-bottom: 10px;  }
+  .promotion .title h3 p, .stockSave .title h3, .goldDiamondBenefit .title h3,  .solution .title h3 { font-size: 28px; line-height: 36px; font-weight: 900;}
   .promotion .promotionTopImage { width: 320px; }
   .promotion .gradeWrap strong { font-size: 12px; }
   .promotion .benefit .gradeWrap .gold {padding: 0 10px;}
   .promotion .benefit .gradeWrap .diamond {padding: 0 0 0 12px;}
+  .stockSave .title p { font-size: 15px; }
 }
 
 @media (min-width: 750px){
@@ -139,68 +151,88 @@
  .mainVisual .cardWrap .cardRight { width: auto; right: -140px; top: 95px; } 
  .mainVisual .titleWrap { bottom: 166px; padding: 0 40px; } 
  .mainVisual .titleWrap p { font-size: 30px; line-height: 42px; margin-bottom: 33px; } 
- .mainVisual .titleWrap h2 { font-size: 88px; } 
+ .mainVisual .titleWrap h2 { font-size: 88px; line-height: 96px; } 
  .mainVisual .logoWrap { align-items: flex-end; bottom: 39px; padding: 0 40px; } 
  .mainVisual .logoWrap .mireAsset { width: 173px; } 
  .mainVisual .logoWrap .hyundaiCard { width: 182px; } 
 
- /**타이틀공통*/
- /* .title .category { font-size: 28px; line-height: 34px; margin-bottom: 20px; }  */
- /* .title h3 > span { font-size: 68px; line-height: 76px; }  */
- /* .title h3 { display: block; font-size: 68px; line-height: 1; }  */
 
  .solution .contentsWrap > div .cardLeft img{ width: 100%;}
+
+ .promotion .title .category, .stockSave .title .category, .goldDiamondBenefit .title .category,  .solution .title .category { font-size: 28px; line-height: 44px; margin-bottom: 26px; }
+ .promotion .contentsWrap .benefit, .promotion .contentsWrap .targetCard, .promotion .contentsWrap .period, .promotion .contentsWrap .join { border-radius: 10px;}
+ .promotion .title h3 p, .stockSave .title h3, .goldDiamondBenefit .title h3, .solution .title h3 { font-size: 68px; line-height: 76px; }
+ .promotion .titleWrap { padding:88px 40px 114px 40px;} 
+ .promotion .titleWrap h3 p{ font-size: 68px; line-height: 74px; } 
+ .promotion .promotionTopImage { width: 750px; top: 76px; }
+ .promotion .contentsWrap { padding: 43px 40px 76px 40px; border-radius: 40px 40px 0 0; }
+ .promotion .benefit { padding: 30px 32px 38px 30px; }
+ .promotion .contentsWrap .contCategory { font-size: 26px; line-height: 36px; }
+ .promotion .contentsWrap .contTitle { font-size: 40px; line-height: 48px; }
+ .promotion .benefit .gradeWrap { margin-top: 20px; }
+ .promotion .gradeWrap .icon img { width: 48px; }
+ .promotion .gradeWrap .icon em { font-size: 28px; line-height: 32px; margin-left: 10px; }
+ .promotion .gradeWrap strong { font-size: 30px; line-height: 36px; margin-top: 12px;}
+ .promotion .benefit .gradeWrap div + div::after { height: 70px; width: 2px; top: 16px;}
+ .promotion .benefit .gradeWrap .diamond {padding: 0 0 0 30px}
+ .promotion .benefit .gradeWrap .gold { padding: 0 24px; }
+ .promotion .benefit .gradeWrap .silver { padding-right: 28px; }
+ .promotion .targetCard { padding: 40px 32px 44px 32px; }
+ .promotion .period { padding: 42px 32px 44px 32px; }
+ .promotion .join { padding: 44px 32px 42px 32px; }
+ .promotion .join ol li { font-size: 28px; line-height: 42px; }
+ .promotion .contentsWrap > div + div { margin-top: 20px; }
+ .promotion .contentsWrap .joinButtonWrap { margin: 40px auto 28px auto; }
+ .promotion .joinButton { padding: 30px 90px; border-radius: 50px; font-size: 40px; }
+ .promotion .notice { font-size: 24px; line-height: 36px; }
+
+ .stockSave { padding: 96px 0 96px 0; }
+ .stockSave .title p { margin-top: 30px; font-size: 34px; line-height: 40px; }
+ .stockSave .backText { font-size: 140px; line-height: 140px; }
+ .stockSave .logoWrap img { width: 75px; }
+ .stockSave .logoWrap { top: 314px; }
+ .stockSave .text { font-size: 28px; line-height: 42px; margin: 14px 0 34px 0; }
+ .stockSave .stockMoreButton { font-size: 28px; line-height: 40px; padding-right: 24px;}
+ .stockSave .stockMoreButton::after { width: 12px; height: 20px; top: 6px; }
+
+ .goldDiamondBenefit { padding: 78px 40px 78px 40px;}
+ .goldDiamondBenefit .subTitle { font-size: 28px; line-height: 32px; margin: 24px 0 50px 0; }
+ .goldDiamondBenefit .contentsWrap { gap: 20px }
+ .goldDiamondBenefit .contentsWrap > div { width: calc(50% - 10px); padding: 28px 18px; }
+ .goldDiamondBenefit .contentsWrap > div em { font-size: 24px; line-height: 30px; }
+ .goldDiamondBenefit .contentsWrap > div.choice1::before { margin-left: -18px; }
+ .goldDiamondBenefit .contentsWrap > div strong { font-size: 40px; line-height: 48px; }
+ .goldDiamondBenefit .contentsWrap > div p { margin-top: 34px; font-size: 24px; line-height: 32px; }
+ .goldDiamondBenefit .info { font-size: 24px; line-height: 36px; }
+ .goldDiamondBenefit .info::before { width: 20px; height: 20px; background-size: 20px 20px; top: 8px; }
+
+ .solution { padding: 76px 0; }
+ .solution .contentsWrap { max-width: 750px; margin: 60px auto auto auto;}
+ .solution .contentsWrap > div .textWrap { padding-left: 40px; }
+ .solution .contentsWrap > div .textWrap strong.name { font-size: 36px; line-height: 40px; margin-bottom: 16px; }
+ .solution .contentsWrap > div .textWrap a { font-size: 28px; line-height: 40px; padding-right: 24px; }
+ .solution .contentsWrap > div .textWrap a::after { width: 12px; height: 18px; top: 6px; }
+ .solution .contentsWrap > div .cardRight { padding-right: 40px; }
+ .solution .contentsWrap .badge { font-size: 24px; line-height: 26px; padding: 0 10px; margin-bottom: 10px; }
+ .solution .contentsWrap strong { font-size: 40px; line-height: 48px; margin-bottom: 12px; }
+ .solution .contentsWrap > div .cardRight ul li { font-size: 24px; line-height: 36px; }
+ .solution .contentsWrap > div .cardRight .topList { margin-bottom: 12px; padding-bottom: 12px; }
+ .solution .contentsWrap > div .cardRight .benefit p { font-size: 28px; line-height: 36px; }
+ .solution .contentsWrap > div .cardRight .silverNotice { font-size: 28px; line-height: 36px; }
+ .solution .contentsWrap > div .cardRight .benefit .feeBadge { height: 34px; margin-left: 10px; }
  
- .promotion .titleWrap { padding: 89px 40px 111px 40px; } 
- .promotion .promotionTopImage { width: 750px; top: 76px; } 
- .promotion .contentsWrap > div + div { margin-top: 24px; } 
- .promotion .contentsWrap { padding: 40px 40px 80px 40px; } 
- .promotion .benefit { padding: 31px 32px; border-radius: 10px; } 
- .promotion .benefit .gradeWrap div + div::after { width: 2px; top: 15px; height: 70px; } 
- .promotion .contentsWrap .benefit,
- .promotion .contentsWrap .targetCard,
- .promotion .contentsWrap .period,
- .promotion .contentsWrap .join { border-radius: 10px;} 
- .promotion .contentsWrap .category { font-size: 26px; line-height: 1.2; margin-bottom: 18px; } 
- .promotion .contentsWrap .title { font-size: 40px; line-height: 48px; letter-spacing: -0.05em; } 
- .promotion .benefit .gradeWrap { margin-top: 30px; } 
- .promotion .targetCard { padding: 40px 30px 40px 32px; border-radius: 10px; background-size: cover; } 
- .promotion .gradeWrap .icon img { width: 46px; } 
- .promotion .gradeWrap .icon em { margin-right: 13px; font-size: 28px; } 
- .promotion .benefit .gradeWrap .silver { padding-right: 30px; } 
- .promotion .benefit .gradeWrap .gold { padding: 0 30px; } 
- .promotion .benefit .gradeWrap .diamond { padding-left: 30px; } 
- .promotion .gradeWrap strong { margin-top: 14px; font-size: 30px; } 
- .promotion .period { padding: 44px 32px 35px 32px; } 
- .promotion .join { border-radius: 10px; padding: 44px 30px 40px 30px; } 
- .promotion .join ol li { font-size: 28px; line-height: 48px; } 
- .promotion .contentsWrap .joinButtonWrap { margin: 40px 0 30px 0; } 
- .promotion .contentsWrap .joinButton { padding: 30px 90px; font-size: 40px; border-radius: 50px; } 
- .promotion .notice { font-size: 24px; } 
- 
- .stockSave { padding: 100px 0 98px 0; } 
- .stockSave .title p { margin-top: 30px; font-size: 34px; } 
- .stockSave .backText { font-size: 140px; margin-top: 24px; } 
- .stockSave .logoWrap img { width: 75px; } 
- .stockSave .logoWrap img + img { margin-left: 30px; } 
- .stockSave .logoWrap { top: 313px; } 
- .stockSave .text { font-size: 28px; margin-bottom: 38px; } 
- .stockSave .stockMoreButton { font-size: 28px; padding-right: 24px; } 
- .stockSave .stockMoreButton::after { top: 6px; width: 11px; height: 20px; } 
- 
- .goldDiamondBenefit { padding: 80px 40px; } 
- .goldDiamondBenefit .subTitle { font-size: 28px; margin: 26px 0 48px 0; } 
- .goldDiamondBenefit .contentsWrap { margin: 0 -20px -20px 0; } 
- .goldDiamondBenefit .contentsWrap > div { cursor: pointer; width: calc(50% - 20px); margin: 0 20px 20px 0; padding: 30px 18px; border-radius: 10px; } 
- .goldDiamondBenefit .contentsWrap > div em { font-size: 24px; line-height: 28px; margin-bottom: 20px; } 
- .goldDiamondBenefit .contentsWrap > div strong { font-size: 40px; line-height: 46px; margin-bottom: 32px; } 
- .goldDiamondBenefit .contentsWrap > div p { font-size: 24px; line-height: 28px; } 
- .goldDiamondBenefit .contentsWrap > div::after{ background-size: cover; bottom: 24px; right: 22px; }
- .goldDiamondBenefit .contentsWrap > div.choice1::after,
- .goldDiamondBenefit .contentsWrap > div.choice4::after { width: 62px; height: 56px; } 
- .goldDiamondBenefit .contentsWrap > div.choice2::after { width: 56px; height: 36px;  } 
- .goldDiamondBenefit .contentsWrap > div.choice3::after { width: 59px; height: 54px;  } 
- .goldDiamondBenefit .contentsWrap > div.choice4::after { width: 64px; height: 56px;  } 
- .goldDiamondBenefit .info { margin-top: 50px; font-size: 24px; } 
- .goldDiamondBenefit .info::before { width: 20px; height: 20px; top: 6px; background-size: cover; } 
- }
+ .bottomNotice { padding: 58px 40px; }
+ .bottomNotice .categoryTitle { font-size: 28px; line-height: 40px; }
+ .bottomNotice .noticeListTitle { font-size: 28px; line-height: 40px; padding-bottom: 4px; margin-bottom: 16px; }
+ .bottomNotice .noticeList.grayDot li { font-size: 24px; line-height: 36px; padding-left: 16px; }
+ .bottomNotice .noticeList.grayDot li:before { width: 6px; height: 6px; top: 16px; }
+ .bottomNotice .investNoti .noticeList { padding-bottom: 24px; }
+ .bottomNotice .investNoti .investDue { padding: 28px 0 28px 0; font-size: 24px; line-height: 38px;}
+ .bottomNotice .investNoti .investDue p { font-size: 24px; line-height: 38px;}
+ .bottomNotice .feeLevel li { font-size: 24px; line-height: 34px;}
+ .bottomNotice .noticeList.blackDot .list { font-size: 24px; line-height: 38px; padding-left: 16px; }
+ .bottomNotice .noticeList.blackDot .list:before { width: 6px; height: 6px; top: 16px; }
+ .bottomNotice .noticeList .pay li { font-size: 24px; line-height: 36px; }
+ .bottomNotice .noticeList .pay li strong { font-size: 24px; line-height: 36px; }
+ .bottomNotice .noticeList .pay { padding: 16px 20px; }
+}
